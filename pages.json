@@ -1,0 +1,717 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"transparentTitle": "auto",
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/workBench",
+			"style": {
+				"navigationBarTitleText": "工作台",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/dataBoard/index",
+			"style": {
+				"navigationBarTitleText": "数据看板",
+				"CryptoJS": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "智慧园区",
+				// "transparentTitle": "always",
+				"navigationBarBackgroundColor": "#177cfe",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/inspection",
+			"style": {
+				"navigationBarTitleText": "巡检",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+				// "app-plus": {
+				// 	"titleNView": {
+				// 		"buttons": [{
+				// 				"text": "\ue60d",
+				// 				"type": "none",
+				// 				"fontSrc": "/static/css/iconfont.ttf",
+				// 				"fontSize": "22px",
+				// 				"float": "right",
+				// 				// "badgeText": "10",
+				// 				"color": "#ffffff"
+				// 				// "redDot": true
+				// 			}
+				// 		]
+				// 	}
+				// }
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/hiddenTtrouble/hiddenTtrouble",
+			"style": {
+				"navigationBarTitleText": "隐患排查",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/secContacts/secContacts",
+			"style": {
+				"navigationBarTitleText": "选择整改人",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "完成",
+							"type": "none",
+							"fontSize": "16px",
+							"float": "right",
+							"right": "20px",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/hiddenTtrouble/questionClassfication/questionClassfication",
+			"style": {
+				"navigationBarTitleText": "选择问题分类",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/hiddenTtrouble/questionClassfication/queSItemDetail/queSItemDetail",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "保存",
+							"type": "none",
+							"fontSize": "16px",
+							"float": "right",
+							"right": "20px",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/onlineIns/onlineIns",
+			"style": {
+				"navigationBarTitleText": "线上巡检",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/onlineIns/linePoint/linePoint",
+			"style": {
+				"navigationBarTitleText": "巡检线路",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "提交",
+							"type": "none",
+							"fontSize": "16px",
+							"float": "right",
+							"right": "20px",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/onlineIns/linePoint/inspPoint/inspPoint",
+			"style": {
+				"navigationBarTitleText": "巡检点",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/onlineIns/linePoint/inspPoint/inspPointTypeClass/inspPointTypeClass",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/workBench/inspection/onlineIns/linePoint/inspPoint/inspPointTypeClass/inspecific/inspecific",
+			"style": {
+				"navigationBarTitleText": "分类详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue67d",
+							"type": "none",
+							"fontSrc": "/static/css/iconfont.ttf",
+							"fontSize": "22px",
+							"float": "right",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/onlineIns/linePoint/inspPoint/inspPointTypeClass/inspecific/questionsBack/questionsBack",
+			"style": {
+				"navigationBarTitleText": "问题反馈",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue67d",
+							"type": "none",
+							"fontSrc": "/static/css/iconfont.ttf",
+							"fontSize": "22px",
+							"float": "right",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/abarbeitung/abarbeitung",
+			"style": {
+				"navigationBarTitleText": "质量追踪",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue6e9",
+							"type": "none",
+							"fontSrc": "/static/css/iconfont.ttf",
+							"fontSize": "22px",
+							"float": "right",
+							// "badgeText": "10",
+							"color": "#ffffff"
+							// "redDot": true
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/checking/checking",
+			"style": {
+				"navigationBarTitleText": "任务详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/abarbeitung/abarDetail/abarDetail",
+			"style": {
+				"navigationBarTitleText": "任务详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "保存",
+							"type": "none",
+							"fontSize": "16px",
+							"float": "right",
+							"right": "20px",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/uploadInsp/uploadInsp",
+			"style": {
+				"navigationBarTitleText": "巡检",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue639",
+							"type": "none",
+							"fontSrc": "/static/css/iconfont.ttf",
+							"fontSize": "22px",
+							"float": "right",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/uploadInsp/unloadPointList/unloadPointList",
+			"style": {
+				"navigationBarTitleText": "项目巡检记录",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/uploadInsp/unloadPointList/unloadClass/unloadClass",
+			"style": {
+				"navigationBarTitleText": "风险类型",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "提交",
+							"type": "none",
+							"fontSize": "16px",
+							"float": "right",
+							"right": "20px",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/uploadInsp/unloadPointList/unloadClass/unloadClassPoint/unloadClassPoint",
+			"style": {
+				"navigationBarTitleText": "风险点",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/uploadInsp/unloadPointList/unloadClass/unloadClassPoint/unloadInspecific/unloadInspecific",
+			"style": {
+				"navigationBarTitleText": "风险源排查",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "保存",
+							"type": "none",
+							"fontSize": "16px",
+							"float": "right",
+							"right": "20px",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/uploadInsp/unloadPointList/unloadClass/unloadClassPoint/unloadInspecific/unloadQuestion/unloadQuestion",
+			"style": {
+				"navigationBarTitleText": "问题反馈",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/myInspectionPlan/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/workBench/inspection/myInspectionProblem/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/workBench/realtimeMonitor/realtimeMonitor",
+			"style": {
+				"navigationBarTitleText": "实时监控",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/workBench/realtimeMonitor/deviceDetails/deviceDetails",
+			"style": {
+				"navigationBarTitleText": "设备详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+
+		},
+		{
+			"path": "pages/workBench/notice/notice",
+			"style": {
+				"navigationBarTitleText": "我的公告",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/me/changeavatar/changeavatar",
+			"style": {
+				"navigationBarTitleText": "头像",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#000000",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "...",
+							"fontSize": "20px",
+							"float": "right",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/workBench/notice/notice",
+			"style": {
+				"navigationBarTitleText": "我的公告",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/me/changeavatar/changeavatar",
+			"style": {
+				"navigationBarTitleText": "头像",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#000000",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "...",
+							"fontSize": "20px",
+							"float": "right",
+							"color": "#ffffff"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/me/about-us/about-us",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9"
+			}
+		},
+		{
+			"path": "pages/me/changenick/changenick",
+			"style": {
+				"navigationBarTitleText": "修改用户名",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+								"text": "保存",
+								"fontSize": "16px",
+								"float": "right",
+								"color": "#ffffff"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/me/changeavatar/imgcut/imgcut",
+			"style": {
+				"navigationBarTitleText": "修改用户名",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/changepwd/changepwd",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9"
+			}
+		},
+		{
+			"path": "pages/me/news-set/news-set",
+			"style": {
+				"navigationBarTitleText": "消息通知",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9"
+			}
+		},
+		{
+			"path": "pages/me/help-and-Advice/help-and-Advice",
+			"style": {
+				"navigationBarTitleText": "帮助和建议",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0193E9"
+			}
+		},
+		{
+			"path": "pages/me/help-and-Advice/advice/advice",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue6e9",
+							"type": "none",
+							"fontSrc": "/static/css/iconfont.ttf",
+							"fontSize": "22px",
+							"float": "right",
+							// "badgeText": "10",
+							"color": "#ffffff"
+							// "redDot": true
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/me/help-and-Advice/advice/advice-detail/advice-detail",
+			"style": {
+				"navigationBarTitleText": "意见反馈详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/me/help-and-Advice/advice/addadvice/addadvice",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+
+	    ,{
+            "path" : "pages/workBench/alarmMsg/alarmMsg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "告警信息",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/alarmMsg/selectRoom/selectRoom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "房间",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/alarmMsg/deviceDetails/deviceDetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "告警处理",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/alarmStatistics/alarmStatistics",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "告警统计",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/myAlarm/myAlarm",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的告警",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/videoMonitor/videoMonitor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频监控",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/videoMonitor/selectCamera/selectCamera",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "筛选",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/workBench/realtimeMonitor/selectRoom/selectRoom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "筛选",
+                "enablePullDownRefresh": false,
+								"navigationBarBackgroundColor": "#0193E9",
+								"navigationBarTextStyle": "white"
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#BBBBBB",
+		"selectedColor": "#01A0FE",
+		"borderStyle": "black",
+		"fontSize": "12px",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/static/img/indexOff.png",
+				"selectedIconPath": "/static/img/indexOn.png"
+			},
+			{
+				"pagePath": "pages/workBench/workBench",
+				"text": "工作",
+				"iconPath": "/static/img/workOff.png",
+				"selectedIconPath": "/static/img/workOn.png"
+			},
+			{
+				"pagePath": "pages/dataBoard/index",
+				"text": "数据",
+				"iconPath": "/static/img/contaOff.png",
+				"selectedIconPath": "/static/img/contactOn.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "设置",
+				"iconPath": "/static/img/meOff.png",
+				"selectedIconPath": "/static/img/meOn.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#0FA4FA",
+		"backgroundColor": "#FFFFFF"
+	}
+}
